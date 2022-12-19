@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.log
+
+# Data
+Data/*
+!Data/subjectSplit.npy
+
+# Test
+test/*
+
+!test/bending.trc
+!test/calf_raise_fast.trc
+!test/calf_raise_side_fast.trc
+!test/calf_raise_side_slow.trc
+!test/calf_raise_slow.trc
+!test/drop_jump.trc
+!test/leg_drop.trc
+!test/lying.trc
+!test/plantarflexion.trc
+!test/push_ups.trc
+
+!test/augmented_bending_reference.trc
+!test/augmented_calf_raise_fast_reference.trc
+!test/augmented_calf_raise_side_fast_reference.trc
+!test/augmented_calf_raise_side_slow_reference.trc
+!test/augmented_calf_raise_slow_reference.trc
+!test/augmented_drop_jump_reference.trc
+!test/augmented_leg_drop_reference.trc
+!test/augmented_lying_reference.trc
+!test/augmented_plantarflexion_reference.trc
+!test/augmented_push_ups_reference.trc
+
+# TrainedModels
+trained_models_LSTM/*
+!trained_models_LSTM/reference_model.json
+!trained_models_LSTM/reference_trainFeatures_mean.npy
+!trained_models_LSTM/reference_trainFeatures_std.npy
+!trained_models_LSTM/reference_weights.h5
