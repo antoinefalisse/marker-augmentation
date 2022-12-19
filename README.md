@@ -41,7 +41,7 @@ To train the model, we used over 100 hours of synthetic data. The dataset was ge
 ### Docker
 - You can also use docker. The following instructions worked for me on a machine where cuda and cudnn were installed, you should adjust the paths and names according to your working environment.
 - Build image: eg `docker build -t antoine/tensorflow:latest-gpu-0.1 .`
-- Train model: eg `sudo docker run --gpus all -it --rm -v /home/clarkadmin/Documents/MyRepositories/marker-augmentation:/marker-augmentation antoine/tensorflow:latest-gpu-0.1 python augmenter-cs230/trainLSTM.py`
+- Train model: eg `sudo docker run --gpus all -it --rm -v /home/clarkadmin/Documents/MyRepositories/marker-augmentation:/marker-augmentation antoine/tensorflow:latest-gpu-0.1 python marker-augmentation/trainLSTM.py`
 - Evaluate model: eg `sudo docker run --gpus all -it --rm -v /home/clarkadmin/Documents/MyRepositories/marker-augmentation:/marker-augmentation antoine/tensorflow:latest-gpu-0.1 python marker-augmentation/evaluateLSTM.py`
 - Test model: eg `sudo docker run --gpus all -it --rm -v /home/clarkadmin/Documents/MyRepositories/marker-augmentation:/marker-augmentation antoine/tensorflow:latest-gpu-0.1 python marker-augmentation/testLSTM.py`
 - Tune hyperparameters: eg `sudo docker run --gpus all -it --rm -v /home/clarkadmin/Documents/MyRepositories/marker-augmentation:/marker-augmentation antoine/tensorflow:latest-gpu-0.1 python marker-augmentation/tuneHyperParametersLSTM.py`

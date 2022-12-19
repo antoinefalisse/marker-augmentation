@@ -12,7 +12,7 @@ from utilities import getAllMarkers, rotateArray, rotateArraySphere3
 
 # %% User inputs.
 # Select case you want to train, see mySettings for case-specific settings.
-case = 2
+case = 0
 
 runTraining = True
 saveTrainedModel = True

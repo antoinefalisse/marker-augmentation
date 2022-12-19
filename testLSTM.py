@@ -9,7 +9,7 @@ from mySettings import get_lstm_settings, get_lstm_tuner_settings
 
 # %% User settings.
 # Select case you want to train, see mySettings for case-specific settings.
-case = "2"
+case = 'reference'
 # Set hyperparameterTuning to True if the model was trained while tuning the
 # hyperparameters
 hyperparameterTuning = False

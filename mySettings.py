@@ -56,7 +56,7 @@ def get_lstm_tuner_settings(a):
         "0":
          {'augmenter_type': 'lowerExtremity',
           "poseDetector": 'OpenPose',
-          "idxDatasets": [idx for idx in range(0,10)],
+          "idxDatasets": [idx for idx in range(0,1)],
           "scaleFactors": [0.9, 0.95, 1., 1.05, 1.1],
           "nEpochs": 10,
           "batchSize": 64,
@@ -77,7 +77,8 @@ def get_lstm_tuner_settings(a):
               "step": 1, "default": 2},
           "noise_magnitude": 0.018,
           "noise_type": "per_timestep",
-          'nRotations': 8,
-          'bidirectional': False}}
+          'nRotations': 10,
+          'rotation_type': 'sphereRotation',
+          'bidirectional': True}}
         
     return settings[str(a)]
