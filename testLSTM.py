@@ -9,7 +9,7 @@ from mySettings import get_lstm_settings, get_lstm_tuner_settings
 
 # %% User settings.
 # Select case you want to train, see mySettings for case-specific settings.
-case = "reference"
+case = "2"
 # Set hyperparameterTuning to True if the model was trained while tuning the
 # hyperparameters
 hyperparameterTuning = False
@@ -32,7 +32,7 @@ else:
     pathCModel = os.path.join(pathTrainedModels, "")
 
 # %% Failure example
-failure_case_name = 'calf_raise_side_fast'
+failure_case_name = 'plantarflexion'
 pathFailreDir = os.path.join(pathMain, 'test')
 pathFile = os.path.join(pathFailreDir, failure_case_name + ".trc")
 subject_height = 1.96

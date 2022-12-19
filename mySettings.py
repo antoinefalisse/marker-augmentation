@@ -67,7 +67,7 @@ def get_lstm_settings(a):
             {'augmenter_type': 'lowerExtremity',
              "poseDetector": 'OpenPose',
              "idxDatasets": [idx for idx in range(0,1)],
-             "scaleFactors": [0.9, 0.95, 1., 1.05, 1.1],
+             "scaleFactors": [1.],
              "nHUnits": 96,
              "nHLayers": 2,
              "nEpochs": 50,
