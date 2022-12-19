@@ -18,18 +18,6 @@ class TRCFile(object):
 
     """
     def __init__(self, fpath=None, **kwargs):
-            #path=None,
-            #data_rate=None,
-            #camera_rate=None,
-            #num_frames=None,
-            #num_markers=None,
-            #units=None,
-            #orig_data_rate=None,
-            #orig_data_start_frame=None,
-            #orig_num_frames=None,
-            #marker_names=None,
-            #time=None,
-            #):
         """
         Parameters
         ----------

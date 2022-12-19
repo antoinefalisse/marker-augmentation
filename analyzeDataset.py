@@ -9,7 +9,7 @@ if platform.system() == 'Linux':
 else:
     pathMain = os.getcwd()
 pathData = os.path.join(pathMain, "Data")
-pathData_all = os.path.join(pathData, "data_CS230")
+pathData_all = os.path.join(pathData, "subset")
 
 # %%
 augmenter_type = 'lowerExtremity'

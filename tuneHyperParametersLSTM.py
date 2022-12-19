@@ -26,11 +26,11 @@ runTunedModelRetraining = True
 # %% Paths
 if platform.system() == 'Linux':
     # To use docker.
-    pathMain = '/augmenter-cs230'
+    pathMain = '/marker-augmentation'
 else:
     pathMain = os.getcwd()
 pathData = os.path.join(pathMain, "Data")
-pathData_all = os.path.join(pathData, "data_CS230")
+pathData_all = os.path.join(pathData, "subset")
 pathTrainedModels = os.path.join(pathMain, "trained_models_LSTM")
 os.makedirs(pathTrainedModels, exist_ok=True)
 pathParameterTuning = os.path.join(

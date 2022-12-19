@@ -27,43 +27,8 @@ def get_lstm_settings(a):
             {'augmenter_type': 'lowerExtremity',
              "poseDetector": 'OpenPose',
              "mean_subtraction": True,
-             "std_normalization": True,},
+             "std_normalization": True,},            
         "0":                
-            {'augmenter_type': 'lowerExtremity',
-             "poseDetector": 'OpenPose',
-             "idxDatasets": [idx for idx in range(0,1)],
-             "scaleFactors": [0.9, 0.95, 1., 1.05, 1.1],
-             "nHUnits": 96,
-             "nHLayers": 2,
-             "nEpochs": 50,
-             "batchSize": 64,
-             "idxFold": 0,
-             'learning_r': 5e-05,
-             "mean_subtraction": True,
-             "std_normalization": True,
-             "noise_magnitude": 0.018,
-             "noise_type": "per_timestep",
-             'nRotations': 1,
-             'bidirectional': False},
-        "1":                
-            {'augmenter_type': 'lowerExtremity',
-             "poseDetector": 'OpenPose',
-             "idxDatasets": [idx for idx in range(0,10)], # Includes 10 datasets
-             "scaleFactors": [0.9, 0.95, 1., 1.05, 1.1], # Each dataset is scaled 5 times with these scale factors
-             "nHUnits": 96,
-             "nHLayers": 2,
-             "nEpochs": 50,
-             "batchSize": 64,
-             "idxFold": 0,
-             'learning_r': 5e-05,
-             "mean_subtraction": True,
-             "std_normalization": True,
-             "noise_magnitude": 0.018,
-             "noise_type": "per_timestep",
-             'nRotations': 8, # Data rotated about vertical axis to represent motions in all directions, each time sequence is rotated 8 (nRotations) times.
-             'bidirectional': False},
-            
-        "2":                
             {'augmenter_type': 'lowerExtremity',
              "poseDetector": 'OpenPose',
              "idxDatasets": [idx for idx in range(0,1)],
@@ -79,27 +44,8 @@ def get_lstm_settings(a):
              "noise_magnitude": 0.018,
              "noise_type": "per_timestep",
              'nRotations': 10,
-             'bidirectional': False,
-             'rotation_type': 'sphereRotation'},
-
-         "3":                
-            {'augmenter_type': 'lowerExtremity',
-             "poseDetector": 'OpenPose',
-             "idxDatasets": [idx for idx in range(0,1)],
-             "scaleFactors": [0.9, 0.95, 1., 1.05, 1.1],
-             "nHUnits": 96,
-             "nHLayers": 2,
-             "nEpochs": 50,
-             "batchSize": 64,
-             "idxFold": 0,
-             'learning_r': 5e-05,
-             "mean_subtraction": True,
-             "std_normalization": True,
-             "noise_magnitude": 0.018,
-             "noise_type": "per_timestep",
-             'nRotations': 1,
-             'bidirectional': False,
-             'rotation_type': 'circleRotation'}}
+             'bidirectional': True,
+             'rotation_type': 'sphereRotation'}}
         
     return settings[str(a)]
 

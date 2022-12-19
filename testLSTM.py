@@ -17,7 +17,7 @@ hyperparameterTuning = False
 # %% Paths.
 if platform.system() == 'Linux':
     # To use docker.
-    pathMain = '/augmenter-cs230'
+    pathMain = '/marker-augmentation'
 else:
     pathMain = os.getcwd()
     
